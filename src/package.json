@@ -15,7 +15,8 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "nuxt": "^3.14.159",
     "vue": "^3.5.12",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "nuxt-svgo-loader": "^0.4.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.42.1",

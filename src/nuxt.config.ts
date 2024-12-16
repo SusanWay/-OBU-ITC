@@ -18,9 +18,26 @@ export default defineNuxtConfig({
   alias: {
     '~modal': '../modal',
   },
+  svgoLoader: {
+    svgoConfig: {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              convertColors: {
+                currentColor: true,
+              },
+              removeViewBox: false,
+            },
+          },
+        },
+      ],
+    },
+  },
   googleFonts: {
     families: {
-      Gogh: [400, 800],
+      Roboto: [400, 500, 800],
     },
   },
 })
